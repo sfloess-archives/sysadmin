@@ -55,10 +55,22 @@ export PATH=${BIN_HOME}:${PATH}
 alias vi='vim'
 alias vim='vim -p -N -u ~/Config/gvimrc'
 alias gvim='gvim -p -N -u ~/Config/gvimrc'
+
+# ------------------------------------------------------------
+
 alias mkdir='mkdir -p'
 alias ..='cd ..'
+
+# ------------------------------------------------------------
+
+alias ll='ls -latr --color=auto'
+
+# ------------------------------------------------------------
+
 alias gen-mac="openssl rand -hex 6 | sed 's/\(..\)\(..\)\(..\)\(..\)\(..\)\(..\)/\1:\2:\3:\4:\5:\6/'"
 
 # ------------------------------------------------------------
 
+alias flossware-screen="screen -S flossware -c ~/Config/flossware.screenrc"
 
+# ------------------------------------------------------------

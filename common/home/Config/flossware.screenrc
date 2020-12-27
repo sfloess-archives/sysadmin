@@ -1,5 +1,3 @@
-source main.screenrc
-
 screen -t "cloud-ap"
 stuff "ssh root@cloud-ap\015"
 
@@ -10,7 +8,7 @@ screen -t "bedroom-ap"
 stuff "ssh root@bedroom-ap\015"
 
 screen -t "den-ap"
-stuff "ssh -p 65022 root@bedroom-ap\015"
+stuff "ssh -p 65022 root@den-ap\015"
 
 screen -t "cloud-storage"
 stuff "ssh -p 2222 root@cloud-storage\015"
@@ -23,3 +21,5 @@ stuff "ssh root@pi-02\015"
 
 screen -t "cloud-server"
 stuff "ssh root@cloud-server\015"
+
+source main.screenrc
