@@ -3,8 +3,16 @@
 # ------------------------------------------------------------
 
 # Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+if [ -f /etc/bashrc ]
+then
+    . /etc/bashrc
+fi
+
+# ------------------------------------------------------------
+
+if [ -f /etc/bash_completion ]
+then
+    . /etc/bash_completion
 fi
 
 # ------------------------------------------------------------
@@ -32,7 +40,7 @@ __prompt_command() {
     local CIRCLE=`__compute_circle ${STATUS}`
     local GIT_INFO=`__compute_git_info`
 
-    PS1="\n${CIRCLE}\[\033[0;37m\][\[\033[1;34m\]\u\[\033[0;31m\]@\h\[\033[0;32m\]${GIT_INFO}\[\033[0;37m\]] \`pwd\`>\[\033[0m\] "
+    PS1="\n${CIRCLE}\[\033[0;37m\][\[\033[1;36m\]\u\[\033[0;31m\]@\h\[\033[0;32m\]${GIT_INFO}\[\033[0;37m\]] \`pwd\`>\[\033[0m\] "
 }
 
 # ------------------------------------------------------------
