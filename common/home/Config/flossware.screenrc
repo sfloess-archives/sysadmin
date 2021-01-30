@@ -11,7 +11,7 @@ screen -t "bedroom-ap"
 stuff "ssh root@bedroom-ap\015"
 
 screen -t "cloud-storage"
-stuff "ssh -p 2222 root@cloud-storage\015"
+stuff "ssh root@cloud-storage\015"
 
 screen -t "pi-01"
 stuff "ssh root@pi-01\015"
